@@ -8,4 +8,4 @@ To install the game:
 The game is now installed; simply double click the `Water Walker.exe` file to play.
 
 # Development
-Clone the repository to your desktop, and open it as a Unity project.
+Clone the repository to your desktop, and open it as a Unity project (or create a new Unity project and import all the files, whatever works).
