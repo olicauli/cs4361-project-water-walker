@@ -1,0 +1,14 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MenuStyles.uss?fileID=7433441132597879392&amp;guid=bf1ec5e4265e2f24db447df591e042b6&amp;type=3#MenuStyles" />
+    <engine:VisualElement name="Root" enabled="true" style="flex-grow: 1; display: flex; visibility: hidden;">
+        <engine:VisualElement name="Middle" style="flex-grow: 1; width: 50%; align-items: stretch; align-self: center; align-content: auto; flex-wrap: nowrap; flex-direction: column; justify-content: center; display: flex; background-color: rgba(0, 0, 0, 0.71);">
+            <engine:Label text="Menu" style="font-size: 100%; align-self: auto; -unity-text-align: upper-center; color: rgba(208, 255, 255, 0.77);" />
+            <engine:VisualElement name="Container" style="flex-grow: 1; align-items: center; max-height: 300px;">
+                <engine:VisualElement name="Buttons" style="flex-grow: 1; background-size: 100% 100%; width: 25%; align-items: stretch;">
+                    <engine:Button text="Main Menu" name="ReturnToMenuButton" class="menu-button" style="font-size: 20px; transition-duration: 0s;" />
+                    <engine:Button text="Quit" name="QuitButton" class="menu-button" style="font-size: 20px; transition-duration: 0s;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

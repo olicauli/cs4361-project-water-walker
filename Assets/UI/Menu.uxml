@@ -1,0 +1,12 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MenuStyles.uss?fileID=7433441132597879392&amp;guid=bf1ec5e4265e2f24db447df591e042b6&amp;type=3#MenuStyles" />
+    <engine:VisualElement name="Container" style="flex-grow: 1; background-color: rgba(47, 232, 255, 0); width: 100%; height: 100%; justify-content: flex-start; align-items: center; font-size: 100%;">
+        <engine:VisualElement name="Title" style="flex-grow: 1; align-self: auto; align-content: auto; justify-content: center; height: 50%; width: 100%; align-items: stretch; font-size: 100%;">
+            <engine:Label text="Water Walker Demo&#10;" name="Text" style="align-self: center; align-content: center; justify-content: center; height: auto; align-items: auto; font-size: 100%; letter-spacing: 10px; transition-duration: 1s; color: rgb(23, 40, 70); -unity-font-style: bold; flex-shrink: 1; -unity-font-definition: url(&quot;project://database/Assets/UI/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=06baf26a5ac8fcc4ca7d3c6aa0358141&amp;type=3#NotInter-Regular&quot;);" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Buttons" style="background-size: 50% 100%; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; padding-top: 40px; padding-right: 0; padding-bottom: 40px; padding-left: 0; width: 15%; -unity-text-align: upper-left; align-items: stretch; justify-content: flex-start; flex-grow: 1; height: 50%; align-self: auto; align-content: auto; flex-basis: auto; font-size: 100%; -unity-text-outline-width: 1px;">
+            <engine:Button text="Play" name="PlayButton" class="menu-button" style="flex-shrink: 1; flex-grow: 1; color: rgb(52, 66, 91); transition-delay: 0s; transition-duration: 0.5s; font-size: 35px;" />
+            <engine:Button text="Exit" name="QuitButton" class="menu-button" style="flex-shrink: 1; flex-grow: 1; transition-delay: 0s; transition-duration: 0.5s; font-size: 35px;" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
