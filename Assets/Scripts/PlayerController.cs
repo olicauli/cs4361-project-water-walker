@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement Settings")]
     public float speed = 5f;
     public float rotationSpeed = 720f;  // degrees per second
-    public float jumpForce = 5f;
+    public float jumpForce = 30f;
 
     [Header("References")]
     public Transform cameraTransform;
@@ -74,27 +74,18 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             isGrounded = false;
-            // animator.SetBool("isJumping", true);
+            animator.SetBool("IsJumping", true);
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
     }
 
-    void Jump()
-    {
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            isGrounded = false;
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }
-    }
-    
     void OnCollisionEnter(Collision collision)
     {
-        // simple “I’m on something” check
+        // simple "I'm on something" check
         if (collision.gameObject.tag == "Ground")
         {
             isGrounded = true;
-            // animator.SetBool("isJumping", false);
+            animator.SetBool("IsJumping", false);
         }
     }
 }
